@@ -11,8 +11,8 @@ import { Label } from "@/components/ui/label"
 import { Alert, AlertDescription } from "@/components/ui/alert"
 import { Lock, Mail, AlertCircle } from "lucide-react"
 
-const VALID_EMAIL = "admin@company.com"
-const VALID_PASSWORD = "password123"
+const VALID_EMAIL = "admin@miningolia.mn"
+const VALID_PASSWORD = "Admin123"
 
 export default function LoginPage() {
   const router = useRouter()
@@ -44,7 +44,7 @@ export default function LoginPage() {
           <div className="mx-auto mb-4 w-12 h-12 bg-primary rounded-sm flex items-center justify-center">
           </div>
           <CardTitle className="text-2xl font-semibold text-foreground">
-            Dashboard TEST " быйбыйбый"
+            Dashboard
           </CardTitle>
           <p className="text-muted-foreground text-sm mt-1">
             Системд нэвтрэхийн тулд нэвтрэх мэдээллээ оруулна уу
@@ -66,7 +66,7 @@ export default function LoginPage() {
                 <Input
                   id="email"
                   type="email"
-                  placeholder="admin@company.com"
+                  placeholder="example@example.com"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className="pl-10 bg-card border-border"
