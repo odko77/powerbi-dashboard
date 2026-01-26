@@ -1,9 +1,9 @@
 module.exports = {
     apps: [{
-      name: 'mysite',
+      name: 'powerbi',
       script: 'npm',
       args: 'start',
-      cwd: '/var/www/mysite/production',
+      cwd: '/var/www/powerbi/production',
       env: {
         NODE_ENV: 'production',
         PORT: 3088
