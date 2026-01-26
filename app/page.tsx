@@ -44,7 +44,7 @@ export default function LoginPage() {
           <div className="mx-auto mb-4 w-12 h-12 bg-primary rounded-sm flex items-center justify-center">
           </div>
           <CardTitle className="text-2xl font-semibold text-foreground">
-            Dashboard TEST 2
+            Dashboard TEST " быйбыйбый"
           </CardTitle>
           <p className="text-muted-foreground text-sm mt-1">
             Системд нэвтрэхийн тулд нэвтрэх мэдээллээ оруулна уу
