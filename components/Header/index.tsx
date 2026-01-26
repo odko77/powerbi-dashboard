@@ -28,7 +28,7 @@ const Header = () => {
     if (isLoading) {
         return (
             <div className="min-h-screen flex items-center justify-center bg-background">
-                <p className="text-muted-foreground">Ачааллаж байна...</p>
+                <p className="text-muted-foreground">Loading...</p>
             </div>
         )
     }
@@ -36,9 +36,7 @@ const Header = () => {
     return (
         <header className="bg-card border-b border-border px-6 py-3 flex items-center justify-between">
             <div className="flex items-center gap-3">
-                <div className="w-8 h-8 bg-primary rounded-sm flex items-center justify-center">
-                </div>
-                <h1 className="text-lg font-semibold text-foreground">Dashboard</h1>
+                <h1 className="text-lg font-semibold text-foreground">Dashboard - Export information on mining products</h1>
             </div>
             <Button
                 variant="outline"
@@ -47,7 +45,7 @@ const Header = () => {
                 className="gap-2 text-foreground border-border hover:bg-muted bg-transparent"
             >
                 <LogOut className="h-4 w-4" />
-                Гарах
+                Logout
             </Button>
         </header>
     )

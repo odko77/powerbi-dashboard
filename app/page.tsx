@@ -32,7 +32,7 @@ export default function LoginPage() {
       localStorage.setItem("isLoggedIn", "true")
       router.push("/dashboard")
     } else {
-      setError("И-мэйл эсвэл нууц үг буруу байна")
+      setError("Incorrect email or password")
     }
     setIsLoading(false)
   }
@@ -41,14 +41,9 @@ export default function LoginPage() {
     <main className="min-h-screen flex items-center justify-center bg-background p-4">
       <Card className="w-full max-w-md shadow-lg border-border">
         <CardHeader className="text-center pb-2">
-          <div className="mx-auto mb-4 w-12 h-12 bg-primary rounded-sm flex items-center justify-center">
-          </div>
           <CardTitle className="text-2xl font-semibold text-foreground">
             Dashboard
           </CardTitle>
-          <p className="text-muted-foreground text-sm mt-1">
-            Системд нэвтрэхийн тулд нэвтрэх мэдээллээ оруулна уу
-          </p>
         </CardHeader>
         <CardContent className="pt-4">
           <form onSubmit={handleSubmit} className="space-y-4">
@@ -60,7 +55,7 @@ export default function LoginPage() {
             )}
 
             <div className="space-y-2">
-              <Label htmlFor="email" className="text-foreground">И-мэйл хаяг</Label>
+              <Label htmlFor="email" className="text-foreground">Email</Label>
               <div className="relative">
                 <Mail className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
                 <Input
@@ -76,7 +71,7 @@ export default function LoginPage() {
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="password" className="text-foreground">Нууц үг</Label>
+              <Label htmlFor="password" className="text-foreground">Password</Label>
               <div className="relative">
                 <Lock className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
                 <Input
@@ -96,15 +91,9 @@ export default function LoginPage() {
               className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
               disabled={isLoading}
             >
-              {isLoading ? "Нэвтэрч байна..." : "Нэвтрэх"}
+              {isLoading ? "Loading..." : "Login"}
             </Button>
           </form>
-
-          <div className="mt-6 pt-4 border-t border-border">
-            <div className="text-center">
-              {new Date().getFullYear()} он
-            </div>
-          </div>
         </CardContent>
       </Card>
     </main>
