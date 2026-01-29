@@ -13,7 +13,7 @@ export default function DashboardPage() {
           title="EXIM_Data"
           width="100%"
           height="1060"
-          src="https://app.powerbi.com/view?r=eyJrIjoiMzI4NTczNzYtOWFmYy00MTkxLTk1YWItY2M2OTMzNTk3Y2M3IiwidCI6IjRhZmZhYzQzLTk4NDItNGNkYS04NzVkLTg4NTYzOWU4ZmU3MSIsImMiOjEwfQ%3D%3D"
+          src="https://app.powerbi.com/view?r=eyJrIjoiMTUxOTU2NzktYzc1Yi00ZTA4LWJhNWMtZmYxZTkzZWI0OTg1IiwidCI6IjJjZmJmMjFjLTJlOWMtNDVkMy1iMDc5LTIxNjVkOWJlZTJmZSIsImMiOjEwfQ%3D%3D"
           frameBorder="0"
           allowFullScreen={true}
         ></iframe>
