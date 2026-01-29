@@ -15,6 +15,7 @@ const VALID_EMAIL = "admin@miningolia.mn"
 const VALID_PASSWORD = "Admin123"
 
 export default function LoginPage() {
+  console.log("running")
   const router = useRouter()
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
