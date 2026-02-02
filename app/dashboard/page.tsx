@@ -15,6 +15,7 @@ export default function DashboardPage() {
           height="1060"
           src="https://app.powerbi.com/view?r=eyJrIjoiOWNkZmYxOTQtNTRkMi00YWJjLWJjZmUtNDYzYTZmNDYzODNhIiwidCI6IjJjZmJmMjFjLTJlOWMtNDVkMy1iMDc5LTIxNjVkOWJlZTJmZSIsImMiOjEwfQ%3D%3D"
           frameBorder="0"
+        
           allowFullScreen={true}
         ></iframe>
       </main>
